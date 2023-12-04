@@ -31,7 +31,7 @@ class IgnoreList
      */
     public static function ignoringNone()
     {
-        return new static();
+        return new self();
 
     }//end ignoringNone()
 
@@ -43,7 +43,7 @@ class IgnoreList
      */
     public static function ignoringAll()
     {
-        $ret = new static();
+        $ret = new self();
         $ret->data['.default'] = true;
         return $ret;
 
